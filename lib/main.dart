@@ -32,7 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    //TODO move to detail page
     setState(() {
       _counter++;
     });
@@ -55,11 +54,17 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            TextButton(
+              child: const Text('call api'),
+              onPressed: () {
+                //TODO Call API
+              },
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        //TODO call Bloc API
+        //TODO move to detail page
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
