@@ -1,0 +1,26 @@
+name: CheckBeforeMerge
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  PR_Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v1
+      - name: Install dependencies
+        id: dependencies
+        run: flutter pub get
+      - name: Format
+        id: formatter
+        run: flutter format --set-exit-if-changed .
+      - name: Analyze
+        id: analyzer
+        run: flutter analyze --fatal-infos
+      - name: Test
+        id: test
+        run: flutter test

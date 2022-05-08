@@ -1,0 +1,14 @@
+name: "Collect TODO"
+on:
+  pull_request:
+    branches: [develop]
+jobs:
+  PR_Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: TODO to Issue
+        uses: alstr/todo-to-issue-action@v4.6.3
