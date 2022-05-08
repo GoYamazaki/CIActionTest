@@ -57,14 +57,14 @@ class _MyHomePageState extends State<MyHomePage> {
             TextButton(
               child: const Text('call api'),
               onPressed: () {
-                //TODO Call API
+                // TODO Call API
               },
             )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        //TODO move to detail page
+        // TODO move to detail page
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
