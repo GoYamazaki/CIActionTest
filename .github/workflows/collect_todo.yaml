@@ -2,6 +2,8 @@ name: "Collect TODO"
 on:
   pull_request:
     branches: [develop]
+  push:
+    branches: [develop]
 jobs:
   PR_Check:
     runs-on: ubuntu-latest
