@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    //TODO move to detail page
     setState(() {
       _counter++;
     });
@@ -58,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        //TODO call Bloc API
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
