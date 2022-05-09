@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'app_bar_mixin.dart';
 
-// todo add thridpage bloc
+// TODO add thridpage bloc
 
 class ThirdPage extends StatelessWidget with AppBarWidget {
   const ThirdPage({Key? key}) : super(key: key);

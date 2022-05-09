@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_test/app_bar_mixin.dart';
 
-// todo add firstpage bloc
+// TODO add firstpage bloc
 
 class FirstPage extends StatelessWidget with AppBarWidget {
   const FirstPage({Key? key}) : super(key: key);
