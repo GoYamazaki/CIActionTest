@@ -1,7 +1,9 @@
+import 'book.dart';
+
 class BookRepository {
-  // TODO add /book get api
+  List<Book> getBooks() {
+    return [];
+  }
 
-  // TODO add /book/star put api
-
-  // TODO(model) create book model
+  void starBook() {}
 }
