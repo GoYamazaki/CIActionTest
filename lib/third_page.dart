@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'app_bar_mixin.dart';
 
 // TODO add thridpage bloc
+// # Markdown suported?
+// - add `getBook()`
+// - add `starBook()`
 
 class ThirdPage extends StatelessWidget with AppBarWidget {
   const ThirdPage({Key? key}) : super(key: key);
