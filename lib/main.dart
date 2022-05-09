@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_test/app_bar_mixin.dart';
 import 'package:hello_test/first_page.dart';
 import 'package:hello_test/second_page.dart';
+import 'package:hello_test/third_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyHomePage extends StatefulWidget {
         SecondPage(
           nowTime: DateTime.now(),
         ),
-        const FlutterSampleWidget(),
+        const ThirdPage(),
       ];
 
   @override

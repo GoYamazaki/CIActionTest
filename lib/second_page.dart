@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hello_test/app_bar_mixin.dart';
 
+// todo add secondpage bloc
+
 class SecondPage extends StatelessWidget with AppBarWidget {
   final DateTime nowTime;
   const SecondPage({Key? key, required this.nowTime}) : super(key: key);
